@@ -44,6 +44,7 @@ class CreateRecipePage(BasePage):
         self.wait_clickable(C.ING).click()
         self.wait_visible(C.WEIGHT).send_keys(weight)
         self.wait_visible(C.ADD_ING).click()
+        self.wait_clickable(C.ING_NAME)
         return self
 
     @allure.step("Ввести время приготовления")
